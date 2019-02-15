@@ -1,0 +1,33 @@
+## Self-Study/Essay Questions
+
+Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
+
+1. What is the purpose of using _sessions_?
+	
+
+	from what I understand sessions "persist" data across requests.
+meaning once "logged in" a session is created and if the client makes a request to the server
+before the session is terminated then the user will not need to "logg back in"
+
+
+1. What does bcrypt do to help us store passwords in a secure manner.
+	
+
+	bcrypt will hash the password before its stored into the database
+
+
+1. What does bcrypt do to slow down attackers?
+	
+
+	simply put it adds time to the algorithm so that it exponentially slows down the
+"attackers" attempts
+
+
+1. What are the three parts of the JSON Web Token?
+
+
+	HEADER contains token type and algorithm, 
+	PAYLOAD any data we need stored on the token payload is not private 
+do not store sensitive information here,
+	SIGNATURE base64 encoded string that combines the header and payload 
+and is then signed
